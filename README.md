@@ -18,7 +18,7 @@ No API keys required for any tool.
 
 **Claude Code**
 ```bash
-claude mcp add --transport http market-intel https://market-intel-mcp.greenfield1775.workers.dev/mcp
+claude mcp add --transport http market-intel https://market.selflabbs.com/mcp
 ```
 
 **Claude Desktop / other clients**
@@ -27,7 +27,7 @@ claude mcp add --transport http market-intel https://market-intel-mcp.greenfield
   "mcpServers": {
     "market-intel": {
       "command": "npx",
-      "args": ["mcp-remote", "https://market-intel-mcp.greenfield1775.workers.dev/mcp"]
+      "args": ["mcp-remote", "https://market.selflabbs.com/mcp"]
     }
   }
 }
@@ -54,7 +54,7 @@ The hosted endpoint is **freemium**:
 After subscribing you receive a license key beginning with `SELFLABBS-`. Pass it as a Bearer token to remove the free-tier caps:
 
 ```bash
-claude mcp add --transport http --header "Authorization: Bearer SELFLABBS-XXXX-XXXX" market-intel https://market-intel-mcp.greenfield1775.workers.dev/mcp
+claude mcp add --transport http --header "Authorization: Bearer SELFLABBS-XXXX-XXXX" market-intel https://market.selflabbs.com/mcp
 ```
 
 ## Self-host (Cloudflare Workers, free tier)
