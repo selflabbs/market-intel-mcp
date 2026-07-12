@@ -3,7 +3,7 @@
   "name": "io.github.selflabbs/market-intel-mcp",
   "title": "Market Intel MCP",
   "description": "Market data for AI agents: crypto prices, FX rates, and stock quotes. No API keys.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "url": "https://github.com/selflabbs/market-intel-mcp",
     "source": "github"
@@ -11,7 +11,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://market-intel-mcp.greenfield1775.workers.dev/mcp"
+      "url": "https://market.selflabbs.com/mcp"
     }
   ]
 }
