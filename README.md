@@ -6,11 +6,11 @@ Real-time market data for AI agents: cryptocurrency prices, foreign-exchange rat
 
 | Tool | What it does | Source |
 |---|---|---|
-| `crypto_price` | Current price, 24h change, and market cap for one or more coins | CoinGecko |
-| `crypto_market` | Top cryptocurrencies by market capitalization, ranked | CoinGecko |
+| `crypto_price` | Current USD price for one or more coins by symbol (BTC, ETH, SOL…) | Coinbase |
+| `crypto_market` | Snapshot of major cryptocurrencies with current USD prices | Coinbase |
 | `fx_convert` | Convert an amount between two currencies at the latest ECB rate | Frankfurter / ECB |
 | `fx_rates` | Latest exchange rates for a base currency | Frankfurter / ECB |
-| `stock_quote` | Latest open/high/low/close + volume for a stock, ETF, or index | Stooq |
+| `stock_quote` | Latest price, previous close, day high/low, and volume for a stock, ETF, or index | Yahoo Finance |
 
 No API keys required for any tool.
 
@@ -36,7 +36,7 @@ claude mcp add --transport http market-intel https://market-intel-mcp.greenfield
 ## Example agent workflows
 
 - *"What's bitcoin trading at, and how much is 500 USD in EUR?"* → `crypto_price` + `fx_convert`
-- *"Give me the top 10 coins by market cap."* → `crypto_market`
+- *"Give me a snapshot of the major coins right now."* → `crypto_market`
 - *"Latest quote for AAPL and TSLA."* → `stock_quote`
 
 ## Pricing
@@ -47,7 +47,7 @@ The hosted endpoint is **freemium**:
 - **Builder — $19/mo** — uncapped results, 5,000 tool calls/mo, priority endpoint.
 - **Team — $49/mo** — uncapped results, 25,000 tool calls/mo, usage dashboard.
 
-**[Subscribe →](https://buy.polar.sh/polar_cl_FHUG28jft1HVLlBa1LtTco5bY5mT8yuY4uC6P2ImBAT)** — one subscription unlocks Pro on every SelfLabbs server.
+**[Subscribe →](https://buy.polar.sh/polar_cl_Q9y3qLrNbtsssN3w5m8SK56oNcruwrmxLEPnd34oAZf)** — one subscription unlocks Pro on every SelfLabbs server.
 
 ### Using your Pro key
 
@@ -63,4 +63,4 @@ Create a Worker, paste `worker.js`, deploy. No configuration or API keys needed.
 
 ## License
 
-MIT. Data from CoinGecko, the European Central Bank (via Frankfurter), and Stooq under their respective terms. Market data is provided as-is for informational purposes and is not financial advice.
+MIT. Data from Coinbase, the European Central Bank (via Frankfurter), and Yahoo Finance under their respective terms. Market data is provided as-is for informational purposes and is not financial advice.
