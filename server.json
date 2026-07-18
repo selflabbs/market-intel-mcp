@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.selflabbs/market-intel-mcp",
   "title": "Market Intel MCP",
-  "description": "Market data for AI agents: crypto prices, FX rates, and stock quotes. No API keys.",
-  "version": "1.0.1",
+  "description": "Foreign-exchange rates for AI agents: live and historical FX rates and currency conversion from European Central Bank reference data. No API keys.",
+  "version": "2.0.0",
   "repository": {
     "url": "https://github.com/selflabbs/market-intel-mcp",
     "source": "github"
